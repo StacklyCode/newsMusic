@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 
-export const Container = styled.div<AtomWrapperProps>`
+export const Container = styled.div`
   position: relative;
   height: ${({ height }) => height || "100%"};
   width: ${({ width }) => width || "100%"};
