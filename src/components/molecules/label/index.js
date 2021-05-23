@@ -15,7 +15,9 @@ const MoleculeLabel = ({
                     href={ link }
                 >
                     <AtomTitle 
-                        size='subtitleSmall'
+                        size='subtitleXSmall'
+                        bold='light'
+                        color='grey'
                     >
                         { text || '#Rock' }
                     </AtomTitle>
