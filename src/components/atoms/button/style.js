@@ -26,7 +26,7 @@ export const StyledButton = styled.button`
         fontSize: "16",
         fontWeight: "600",
         letterSpacing: "",
-        padding: "6px 12px",
+        padding: "3px 7px",
         width: "106px",
         ":hover": {
             backgroundColor: '',
@@ -37,13 +37,10 @@ export const StyledButton = styled.button`
         backgroundColor: '#1F1F24',
         border: '1px solid transparent',
         borderRadius: '0px',
-        color: "#fafafa",
         cursor: "pointer",
-        fontFamily: "inherit",
-        fontSize: "16",
         fontWeight: "500",
         letterSpacing: "",
-        padding: "2px 6px",
+        padding: "10px 15px",
         width: "100%",
         ":hover": {
             backgroundColor: '#1B1B20',
