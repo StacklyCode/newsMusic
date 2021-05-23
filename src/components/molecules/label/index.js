@@ -1,18 +1,27 @@
 import AtomTitle from '../../atoms/title';
 import AtomButton from '../../atoms/button';
 
+import { StyledLabel } from './style';
+
 const MoleculeLabel = ({ 
-    color = 'tag',
-    theme = 'tag',
-    link
+    link,
+    text
 }) => { 
     return (
-        <AtomButton 
-            color={ color } 
-            link={ link }
-        >
-            <AtomTitle theme={ theme }></AtomTitle>
-        </AtomButton>
+        <>
+            <StyledLabel>
+                <AtomButton
+                    color='tag'
+                    href={ link }
+                >
+                    <AtomTitle 
+                        size='subtitleSmall'
+                    >
+                        { text || '#Rock' }
+                    </AtomTitle>
+                </AtomButton>
+            </StyledLabel>
+        </>
     );
 }
 
