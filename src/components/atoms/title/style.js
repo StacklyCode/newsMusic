@@ -1,110 +1,52 @@
 import styled from '@emotion/styled';
 
-export const Title = styled.h1`
-    ${({ size }) =>
-    size === 'titleLarge' && {
-        alignItems: 'center',
-        border: '1px solid transparent',
-        display: 'block',
-        color: '#fafafa',
-        fontFamily: 'inherit',
-        fontWeight: '700',
-        fontSize: '40px',
-        letterSpacing: '0.9px',
-        lineHeight: 'normal'
-    }}
-    ${({ size }) =>
-    size === 'titleXMedium' && {
-        alignItems: 'center',
-        border: '1px solid transparent',
-        display: 'block',
-        color: '#E4E4E5',
-        fontFamily: 'inherit',
-        fontWeight: '700',
-        fontSize: '24px',
-        letterSpacing: '0.9px',
-        lineHeight: 'normal'
-    }}
-    ${({ size }) =>
-    size === 'titleMedium' && {
-        alignItems: 'center',
-        border: '1px solid transparent',
-        display: 'block',
-        color: '#fafafa',
-        fontFamily: 'inherit',
-        fontWeight: '700',
-        fontSize: '22px',
-        letterSpacing: '0.9px',
-        lineHeight: 'normal'
-    }}
-    ${({ size }) =>
-    size === 'titleSmall' && {
-        alignItems: 'center',
-        border: '1px solid transparent',
-        display: 'block',
-        color: '#fafafa',
-        cursor: 'pointer',
-        fontFamily: 'inherit',
-        fontWeight: '700',
-        fontSize: '20px',
-        letterSpacing: '0.9px',
-        lineHeight: 'normal'
+const SIZES = {
+    titleXLarge: '40px',
+    titleLarge: '24px',
+    titleXMedium: '22px',
+    titleMedium: '20px',
+    titleXSmall: '18px',
+    titleSmall: '16px',
+    subtitleLarge: '14px',
+    subtitleMedium: '12px',
+    subtitleSmall: '10px'
+}
 
-    }}
-    ${({ size }) =>
-    size === 'subtitleXMedium' && {
-        alignItems: 'center',
-        border: '1px solid transparent',
-        display: 'block',
-        color: '#E4E4E5',
-        cursor: 'pointer',
-        fontFamily: 'inherit',
-        fontWeight: '500',
-        fontSize: '22px',
-        letterSpacing: '0.9px',
-        lineHeight: 'normal'
-        
-    }}
-    ${({ size }) =>
-    size === 'subtitleLMedium' && {
-        alignItems: 'center',
-        border: '1px solid transparent',
-        display: 'block',
-        color: '#E4E4E5',
-        cursor: 'pointer',
-        fontFamily: 'inherit',
-        fontWeight: '300',
-        fontSize: '22px',
-        letterSpacing: '0.9px',
-        lineHeight: 'normal'
-        
-    }}
-    ${({ size }) =>
-    size === 'subtitleMedium' && {
-        alignItems: 'center',
-        border: '1px solid transparent',
-        display: 'block',
-        color: '#A8A8A8',
-        cursor: 'pointer',
-        fontFamily: 'inherit',
-        fontWeight: '600',
-        fontSize: '18px',
-        letterSpacing: '0.9px',
-        lineHeight: 'normal'
-        
-    }}
-    
-    ${({ size }) =>
-    size === 'subtitleSmall' && {
-        alignItems: 'center',
-        border: '1px solid transparent',
-        display: 'block',
-        color: '#BDBDBD',
-        cursor: 'pointer',
-        fontFamily: 'inherit',
-        fontWeight: '500',
-        fontSize: '18px',
-        letterSpacing: '0.9px',
-        lineHeight: 'normal'
-    }}
+const BOLD = {
+    light: '300',
+    regular: '400',
+    medium: '500',
+    semiBold: '600',
+    bold: '700',
+    extraBold: '800',
+    black: '900'
+}
+
+const COLOR = {
+    white: '#fafafa',
+    lightWhite: '#f8f9fa',
+    lightGrey: '#dee2e6',
+    mediumGrey: '#cccccc',
+    grey: '#ced4da',
+    lightBlue: '#e7ecef',
+    extraLightBlue: '#f6fff8'
+}
+
+const ALIGN = {
+    center: 'center',
+    left: 'left',
+    right: 'right',
+    justify: 'justify',
+    start: 'start',
+    end: 'end',
+    initial: 'initial'
+}
+
+export const Title = styled.h1`
+    font-size: ${props => SIZES[props.size]};
+    color: ${props => COLOR[props.color]};
+    font-weight: ${props => BOLD[props.bold]};
+    font-family: sans-serif;
+    line-height: 0.7px;
+    text-align: ${props => ALIGN[props.align]};
 `;
