@@ -10,7 +10,8 @@ export const Avatar = styled.div`
     justify-content: center;
     text-align: center;
     width: 180px;
-
+    line-height: 29px;
+    
     img {
         width: 120px;
         height: 120px;
