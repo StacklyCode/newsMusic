@@ -6,7 +6,7 @@ export const Image = styled.div`
 
     ${({ theme }) =>
     theme && {
-        filter: 'opacity(60%)',
+        filter: 'opacity(75%)',
  
     }}
     
