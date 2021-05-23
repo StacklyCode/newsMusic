@@ -18,6 +18,8 @@ const MoleculeAvatar = ({
             </AtomImage>
             <AtomTitle
                 size='subtitleSmall'
+                bold='semiBold'
+                color='grey'
                 href={ link }
             >
                 { title || 'Band Metal' }
