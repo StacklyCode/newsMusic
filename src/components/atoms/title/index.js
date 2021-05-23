@@ -1,14 +1,13 @@
-import { Title } from './styled';
+import { Title } from './style';
 
 const AtomTitle = ({
     children,
-    theme,
-    link
+    size
+    
 }) => {
     return (
         <Title 
-            theme={ theme }
-            link={ link }
+            size={ size }
         >
             { children || "Text" }
         </Title>
