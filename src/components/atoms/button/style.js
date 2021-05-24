@@ -25,9 +25,6 @@ export const StyledButton = styled.button`
         fontFamily: "inherit",
         fontSize: "16",
         fontWeight: "600",
-        letterSpacing: "",
-        padding: "3px 7px",
-        width: "106px",
         ":hover": {
             backgroundColor: '',
         },

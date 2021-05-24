@@ -27,9 +27,10 @@ const COLOR = {
     lightWhite: '#f8f9fa',
     lightGrey: '#dee2e6',
     mediumGrey: '#cccccc',
-    grey: '#ced4da',
+    grey: '#8B8E90',
     lightBlue: '#e7ecef',
-    extraLightBlue: '#f6fff8'
+    extraLightBlue: '#f6fff8',
+    blue: '#34A7FB'
 }
 
 const ALIGN = {
