@@ -1,6 +1,6 @@
 import { Container } from "./style";
 
-const AtomWrapper = (
+const AtomWrapper = ({
   children,
   alignItems,
   justifyContent,
@@ -13,7 +13,7 @@ const AtomWrapper = (
   padding,
   width,
   height
-) => {
+}) => {
   return (
     <Container
       alignItems={alignItems}
