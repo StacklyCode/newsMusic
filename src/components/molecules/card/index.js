@@ -8,16 +8,19 @@ import { Card, CardNews } from './style';
 
 const MoleculeCard = ({
     description,
+    datePublished,
+    textButton,
+    altText,
+    imgSrc,
     title,
-    link,
-    src
+    link
     
 }) => {
     return (
         <Card>
            
             <AtomImage>
-                <img src={ src } alt='' />
+                <img src={ imgSrc } alt={ altText } />
             </AtomImage>
             <CardNews>
             <div>
@@ -35,7 +38,7 @@ const MoleculeCard = ({
                         color='grey'
                         bold='light'
                     >
-                        { description || 'March 22, 2021' }
+                        { datePublished || 'March 22, 2021' }
                     </AtomTitle>
 
                     <AtomBody>
@@ -51,7 +54,7 @@ const MoleculeCard = ({
                             color='blue'
                             bold='semiBold'
                         >
-                            { description || 'Read more' }
+                            { textButton || 'Read more' }
                         </AtomTitle>
                     </ AtomButton> 
             </div>
