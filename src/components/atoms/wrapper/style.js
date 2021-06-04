@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
-
-
+import {css} from "@emotion/react";
 export const Container = styled.div`
   position: relative;
   height: ${({ height }) => height || "100%"};
@@ -13,4 +12,6 @@ export const Container = styled.div`
   align-items: ${({ alignItems }) => alignItems || "flex-start"};
   justify-content: ${({ justifyContent }) => justifyContent || "flex-start"};
   background-color: ${({ backgroudColor }) => backgroudColor || "transparent"};
+  border-radius: ${({ borderradius }) => borderradius || "0px"};
+  ${({cursorPointer}) => (cursorPointer && css`cursor: pointer;`)}
 `;

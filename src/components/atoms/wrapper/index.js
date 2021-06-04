@@ -1,6 +1,6 @@
 import { Container } from "./style";
 
-const AtomWrapper = (
+const AtomWrapper = ({
   children,
   alignItems,
   justifyContent,
@@ -12,8 +12,10 @@ const AtomWrapper = (
   margin,
   padding,
   width,
-  height
-) => {
+  height,
+  cursor,
+  borderradius
+}) => {
   return (
     <Container
       alignItems={alignItems}
@@ -27,6 +29,8 @@ const AtomWrapper = (
       padding={padding}
       width={width}
       height={height}
+      cursor={cursor}
+      borderradius={borderradius}
     >
       {children}
     </Container>

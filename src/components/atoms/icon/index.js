@@ -1,34 +1,26 @@
-import { Icon } from './style';
+import dynamic from "next/dynamic";
+import { IconStyled } from "./style";
+// import '../../../assets/icon/music.svg'
 
-const AtomIcon = ({
-    icon,
-    size,
-    href,
-    color,
-    viewBox,
-    background,
-    radius
-}) => {
 
-    return (
-        <Icon
-            background={ background }
-            radius={ radius }
-            href={ href }
-        >
-            <svg
-                viewBox={ viewBox }
-                width={`${size}px`}
-                height={`${size}px`}
-                xmlns='http://www.w3.org/2000/svg'
-            >
-                <path
-                    fill={ color } 
-                    d={ icon }
-                ></path>
-            </svg>
-        </Icon>
-    )
-}
+const AtomIcon = ({ children, icon, size, name, zindex, rotate, width }) => {
+  const DynamicIcon = dynamic(
+    () => import(`../../../assets/icon/music.svg`).catch(()=>{return false})
+  );
+
+
+  return (
+    <IconStyled
+      width={size}
+      name={name}
+      zindex={zindex}
+      rotate={rotate}
+      width={width}
+    >
+      {DynamicIcon && (<DynamicIcon />)}
+      {children}
+    </IconStyled>
+  );
+};
 
 export default AtomIcon;
