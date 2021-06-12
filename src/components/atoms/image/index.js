@@ -3,14 +3,16 @@ import { Image } from './style';
 const AtomImage = ({
     radius,
     theme,
-    image
-
+    image,
+    width,
+    height
 }) => {
     return (
         <Image 
             theme={ theme }
             radius={ radius }
-            
+            width ={width} 
+            height={height}
         >
             <img
                 src={ image || 'https://images.pexels.com/photos/1626481/pexels-photo-1626481.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' }
