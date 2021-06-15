@@ -13,5 +13,7 @@ export const Container = styled.div`
   justify-content: ${({ justifyContent }) => justifyContent || "flex-start"};
   background-color: ${({ backgroudColor }) => backgroudColor || "transparent"};
   border-radius: ${({ borderradius }) => borderradius || "0px"};
-  ${({cursorPointer}) => (cursorPointer && css`cursor: pointer;`)}
+  ${({cursorPointer}) => (cursorPointer && css`cursor: pointer;`)};
+  gap:  ${({ gap }) => gap || "0px"};
+  flex-wrap: ${({ flexwrap }) => flexwrap || "nowrap"};
 `;

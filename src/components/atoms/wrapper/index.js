@@ -14,7 +14,9 @@ const AtomWrapper = ({
   width,
   height,
   cursor,
-  borderradius
+  borderradius,
+  gap,
+  flexwrap
 }) => {
   return (
     <Container
@@ -31,6 +33,8 @@ const AtomWrapper = ({
       height={height}
       cursor={cursor}
       borderradius={borderradius}
+      flexwrap={flexwrap}
+      gap={gap}
     >
       {children}
     </Container>
